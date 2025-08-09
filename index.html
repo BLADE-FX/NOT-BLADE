@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -11,7 +10,8 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/></head>
+<link href="styles.css" rel="stylesheet"/>
+</head>
 <body>
 <!-- Particles.js container -->
 <div id="particles-js" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></div>
@@ -24,14 +24,20 @@
 <a class="nav-link text-sm font-medium" href="#about">About</a>
 <a class="nav-link text-sm font-medium" href="#services">Services</a>
 <a class="nav-link text-sm font-medium" href="#portfolio">Portfolio</a>
+<a class="nav-link text-sm font-medium" href="#experience">Experience</a>
+<a class="nav-link text-sm font-medium" href="#education">Education</a>
+<a class="nav-link text-sm font-medium" href="#skills">Skills</a>
+<a class="nav-link text-sm font-medium" href="#clients">Clients</a>
+<a class="nav-link text-sm font-medium" href="#blogs">Blogs</a>
 <a class="nav-link text-sm font-medium" href="#contact">Contact</a>
 </div>
-<button class="bg-gradient-to-r from-primary to-secondary px-6 py-2 !rounded-button text-sm font-medium whitespace-nowrap glow-effect">
+<button id="open-auth-modal" class="bg-gradient-to-r from-primary to-secondary px-6 py-2 !rounded-button text-sm font-medium whitespace-nowrap glow-effect">
 Get Started
 </button>
 </div>
 </div>
 </nav>
+
 <section class="min-h-screen flex items-center hero-bg pt-20" id="home">
 <div class="max-w-7xl mx-auto px-6 py-20">
 <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -47,22 +53,16 @@ I'm starting my journey in creating portfolios, web banners, thumbnails, and log
 </p>
 </div>
 <div class="flex items-center space-x-8">
-<button class="bg-gradient-to-r from-primary to-secondary px-8 py-3 !rounded-button font-medium whitespace-nowrap glow-effect">
-Download CV
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="bg-gradient-to-r from-primary to-secondary px-8 py-3 !rounded-button font-medium whitespace-nowrap glow-effect">
+Hire Me
 </button>
 <div class="flex items-center space-x-4">
-<div class="w-8 h-8 flex items-center justify-center">
-<i class="ri-linkedin-line text-xl"></i>
-</div>
-<div class="w-8 h-8 flex items-center justify-center">
-<i class="ri-instagram-line text-xl"></i>
-</div>
-<div class="w-8 h-8 flex items-center justify-center">
-<i class="ri-twitter-line text-xl"></i>
-</div>
-<div class="w-8 h-8 flex items-center justify-center">
-<i class="ri-github-line text-xl"></i>
-</div>
+  <div class="w-8 h-8 flex items-center justify-center">
+    <a href="https://instagram.com/i.m.blade" target="_blank"><i class="ri-instagram-line text-xl"></i></a>
+  </div>
+  <div class="w-8 h-8 flex items-center justify-center">
+    <a href="https://github.com/BLADE-FX" target="_blank"><i class="ri-github-line text-xl"></i></a>
+  </div>
 </div>
 </div>
 </div>
@@ -95,6 +95,7 @@ Download CV
 </div>
 </div>
 </section>
+
 <section class="py-20" id="about">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -125,8 +126,9 @@ With a keen eye for design and a commitment to staying current with industry tre
 </div>
 </div>
 <div class="flex items-center space-x-6 mt-8">
-<button class="bg-gradient-to-r from-primary to-secondary px-8 py-3 !rounded-button font-medium whitespace-nowrap glow-effect">
-Download CV
+<!-- Hire Me button in About section -->
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="bg-gradient-to-r from-primary to-secondary px-8 py-3 !rounded-button font-medium whitespace-nowrap glow-effect">
+Hire Me
 </button>
 <button class="px-8 py-3 border border-primary text-primary hover:bg-primary/10 transition-colors !rounded-button font-medium whitespace-nowrap">
 Let's Talk
@@ -136,6 +138,7 @@ Let's Talk
 </div>
 </div>
 </section>
+
 <section class="py-20" id="services">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
@@ -214,6 +217,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 </section>
+
 <section class="py-20" id="portfolio">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
@@ -228,7 +232,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 <div class="grid md:grid-cols-2 gap-8" id="portfolio-grid">
-<div class="project-card glass-card rounded-xl overflow-hidden relative group" data-category="design">
+<div class="project-card glass-card rounded-xl overflow-hidden relative group transition duration-300 hover:scale-105 hover:shadow-2xl" data-category="design">
 <img alt="YouTube Thumbnail Project" class="w-full h-64 object-cover object-top" src="https://readdy.ai/api/search-image?query=Modern%20YouTube%20thumbnail%20design%20with%20vibrant%20colors%2C%20bold%20typography%2C%20gaming%20theme%20with%20neon%20effects%2C%20professional%20layout%20with%20call-to-action%20elements%2C%20high%20contrast%20design%2C%20trending%20style%20for%20gaming%20content%20creators&amp;width=600&amp;height=400&amp;seq=project-1&amp;orientation=landscape"/>
 <div class="project-overlay absolute inset-0 flex items-center justify-center">
 <div class="text-center">
@@ -283,17 +287,18 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 </section>
-<section class="py-20">
+
+<section class="py-20" id="experience">
 <div class="max-w-7xl mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-16">
-<div>
-<h2 class="text-3xl font-bold mb-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">
 <span class="gradient-text">My Experience</span>
 </h2>
+</div>
 <div class="space-y-8 pl-8">
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Freelance Designer</h3>
 <span class="text-sm text-primary">2025 - Present</span>
@@ -303,7 +308,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Digital Creator</h3>
 <span class="text-sm text-primary">2024 - 2025</span>
@@ -313,7 +318,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Tech Enthusiast</h3>
 <span class="text-sm text-primary">2023 - 2024</span>
@@ -323,14 +328,19 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 </div>
-<div>
-<h2 class="text-3xl font-bold mb-8">
+</section>
+
+<section class="py-20" id="education">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">
 <span class="gradient-text">My Education</span>
 </h2>
+</div>
 <div class="space-y-8 pl-8">
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Adobe Creative Suite</h3>
 <span class="text-sm text-primary">2024 - Present</span>
@@ -340,7 +350,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Video Editing Mastery</h3>
 <span class="text-sm text-primary">2024</span>
@@ -350,7 +360,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 <div class="timeline-item">
 <div class="timeline-dot"></div>
-<div class="glass-card p-6 rounded-xl">
+<div class="glass-card p-6 rounded-xl sweep-anim">
 <div class="flex justify-between items-start mb-2">
 <h3 class="text-lg font-semibold text-white">Graphic Design Fundamentals</h3>
 <span class="text-sm text-primary">2023 - 2024</span>
@@ -360,10 +370,9 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
-<section class="py-20">
+
+<section class="py-20" id="skills">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="text-4xl font-bold mb-4">
@@ -375,42 +384,42 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-<i class="ri-movie-line text-2xl text-white"></i>
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center glass-card sweep-anim">
+<img src="filmora.png" alt="Filmora" class="w-10 h-10 object-contain"/>
 </div>
 <h3 class="text-white font-medium mb-2">Filmora</h3>
 <div class="text-2xl font-bold gradient-text skill-percentage" data-target="85">0%</div>
 </div>
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
-<i class="ri-image-edit-line text-2xl text-white"></i>
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center glass-card sweep-anim">
+<img src="photoshop.png" alt="Photoshop" class="w-10 h-10 object-contain"/>
 </div>
 <h3 class="text-white font-medium mb-2">Photoshop</h3>
 <div class="text-2xl font-bold gradient-text skill-percentage" data-target="80">0%</div>
 </div>
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center">
-<i class="ri-video-edit-line text-2xl text-white"></i>
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center glass-card sweep-anim">
+<img src="premiere pro.png" alt="Premiere Pro" class="w-10 h-10 object-contain"/>
 </div>
 <h3 class="text-white font-medium mb-2">Premiere Pro</h3>
 <div class="text-2xl font-bold gradient-text skill-percentage" data-target="75">0%</div>
 </div>
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center">
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center glass-card sweep-anim">
 <i class="ri-scissors-cut-line text-2xl text-white"></i>
 </div>
 <h3 class="text-white font-medium mb-2">CapCut</h3>
 <div class="text-2xl font-bold gradient-text skill-percentage" data-target="90">0%</div>
 </div>
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center glass-card sweep-anim">
 <i class="ri-robot-line text-2xl text-white"></i>
 </div>
 <h3 class="text-white font-medium mb-2">AI Tools</h3>
 <div class="text-2xl font-bold gradient-text skill-percentage" data-target="70">0%</div>
 </div>
 <div class="text-center">
-<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center">
+<div class="skill-icon w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center glass-card sweep-anim">
 <i class="ri-palette-fill text-2xl text-white"></i>
 </div>
 <h3 class="text-white font-medium mb-2">Design</h3>
@@ -419,7 +428,8 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 </div>
 </section>
-<section class="py-20">
+
+<section class="py-20" id="clients">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="text-4xl font-bold mb-4">
@@ -427,12 +437,14 @@ Proficient in industry-standard tools and always learning new technologies to de
 </h2>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
-<div class="glass-card p-8 rounded-xl">
+<div class="glass-card p-8 rounded-xl sweep-anim">
 <div class="flex items-center space-x-4 mb-6">
-<img alt="Client" class="w-12 h-12 rounded-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20satisfied%20client%2C%20business%20person%20smiling%2C%20corporate%20portrait%2C%20clean%20background%2C%20confident%20expression%2C%20modern%20professional%20photography&amp;width=80&amp;height=80&amp;seq=client-1&amp;orientation=squarish"/>
+<img alt="EGON" class="w-12 h-12 rounded-full object-cover object-top" src="egon.jpg"/>
 <div>
-<h4 class="text-white font-semibold">Rajesh Kumar</h4>
-<p class="text-gray-400 text-sm">YouTube Creator</p>
+<h4 class="text-white font-semibold">
+<a href="https://www.youtube.com/@BRT-EGON" target="_blank" class="hover:underline">EGON</a>
+</h4>
+<p class="text-gray-400 text-sm">YouTuber</p>
 </div>
 </div>
 <p class="text-gray-300 italic">
@@ -448,12 +460,12 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 </div>
 </div>
-<div class="glass-card p-8 rounded-xl">
+<div class="glass-card p-8 rounded-xl sweep-anim">
 <div class="flex items-center space-x-4 mb-6">
-<img alt="Client" class="w-12 h-12 rounded-full object-cover object-top" src="https://readdy.ai/api/search-image?query=Professional%20businesswoman%20headshot%2C%20female%20entrepreneur%20smiling%2C%20corporate%20portrait%2C%20clean%20background%2C%20confident%20expression%2C%20modern%20professional%20photography&amp;width=80&amp;height=80&amp;seq=client-2&amp;orientation=squarish"/>
+<img alt="Mr Beast" class="w-12 h-12 rounded-full object-cover object-top" src="mrbeast.jpg"/>
 <div>
-<h4 class="text-white font-semibold">Priya Sharma</h4>
-<p class="text-gray-400 text-sm">Small Business Owner</p>
+<h4 class="text-white font-semibold">Mr Beast</h4>
+<p class="text-gray-400 text-sm">Content Creator</p>
 </div>
 </div>
 <p class="text-gray-300 italic">
@@ -472,7 +484,8 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 </div>
 </section>
-<section class="py-20">
+
+<section class="py-20" id="blogs">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
 <h2 class="text-4xl font-bold mb-4">
@@ -522,6 +535,7 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 </div>
 </section>
+
 <section class="py-20" id="contact">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
@@ -535,7 +549,7 @@ I'm always excited to work on new projects and collaborate with creative minds. 
 <div class="grid lg:grid-cols-2 gap-16">
 <div class="space-y-8">
 <div class="glass-card p-8 rounded-xl">
-<form class="space-y-6">
+<form class="space-y-6" action="https://formspree.io/f/mkgzknjb" method="POST">
 <div class="grid md:grid-cols-2 gap-6">
 <div>
 <input class="w-full px-4 py-3 rounded-lg text-sm" placeholder="Your Name" type="text"/>
@@ -591,17 +605,11 @@ Send Message
 <div class="mt-8 pt-8 border-t border-gray-700">
 <h4 class="text-white font-medium mb-4">Follow Me</h4>
 <div class="flex space-x-4">
-<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="https://instagram.com/i.m.blade" target="_blank">
 <i class="ri-instagram-line text-white"></i>
 </a>
-<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<i class="ri-linkedin-line text-white"></i>
-</a>
-<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<i class="ri-twitter-line text-white"></i>
-</a>
-<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="#">
-<i class="ri-youtube-line text-white"></i>
+<a class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center hover:scale-110 transition-transform" href="https://github.com/BLADE-FX" target="_blank">
+<i class="ri-github-line text-white"></i>
 </a>
 </div>
 </div>
@@ -610,6 +618,7 @@ Send Message
 </div>
 </div>
 </section>
+
 <footer class="py-12 border-t border-gray-800">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-col md:flex-row items-center justify-between">
@@ -619,12 +628,38 @@ Send Message
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#about">About</a>
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#services">Services</a>
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#portfolio">Portfolio</a>
+        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#experience">Experience</a>
+        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#education">Education</a>
+        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#skills">Skills</a>
+        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#clients">Clients</a>
+        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#blogs">Blogs</a>
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#contact">Contact</a>
       </div>
       <p class="text-gray-400 text-sm">© 2025 Shivam Anand. All rights reserved.</p>
     </div>
   </div>
 </footer>
+
+<!-- Login/Signup Modal -->
+<div id="auth-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999] hidden">
+  <div class="bg-white rounded-xl p-8 max-w-sm w-full relative">
+    <button id="close-auth-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-900 text-xl">&times;</button>
+    <h2 class="text-2xl font-bold mb-4 text-center text-gray-900">Login / Signup</h2>
+    <form>
+      <input class="w-full px-4 py-2 mb-4 border rounded" type="email" placeholder="Email" required>
+      <input class="w-full px-4 py-2 mb-4 border rounded" type="password" placeholder="Password" required>
+      <button class="w-full bg-gradient-to-r from-primary to-secondary text-white py-2 rounded font-semibold" type="submit">Login / Signup</button>
+    </form>
+  </div>
+</div>
+<script>
+document.getElementById('open-auth-modal').onclick = function() {
+  document.getElementById('auth-modal').classList.remove('hidden');
+};
+document.getElementById('close-auth-modal').onclick = function() {
+  document.getElementById('auth-modal').classList.add('hidden');
+};
+</script>
 
 <!-- Your other scripts -->
 <script src="script3.js"></script>
@@ -640,6 +675,32 @@ Send Message
   particlesJS.load('particles-js', 'particles.json', function() {
     console.log('particles.js loaded - callback');
   });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active styles from all buttons
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-white');
+        b.classList.add('text-gray-400');
+      });
+      // Add active styles to the clicked button
+      this.classList.add('bg-primary', 'text-white');
+      this.classList.remove('text-gray-400');
+      // Get the filter value
+      const filter = this.getAttribute('data-filter');
+      // Show/hide project cards based on filter
+      document.querySelectorAll('.project-card').forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
 </script>
 </body>
 </html>
