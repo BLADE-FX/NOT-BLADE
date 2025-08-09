@@ -153,3 +153,913 @@ transition: background 0.3s ease;
 button.bg-gradient-to-r:hover {
 background: linear-gradient(to right, #EC4899, #8B5CF6);
 }
+
+/* Enhanced Particle Effects */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  cursor: crosshair;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  background: transparent;
+}
+
+#particles-js canvas {
+  cursor: crosshair !important;
+  pointer-events: auto !important;
+  transition: all 0.3s ease;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.3));
+}
+
+#particles-js:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+  cursor: grab;
+}
+
+#particles-js:active {
+  transform: scale(0.98);
+  cursor: grabbing;
+}
+
+#particles-js * {
+  cursor: crosshair !important;
+  pointer-events: auto !important;
+}
+
+.particles-js-canvas-el {
+  cursor: crosshair !important;
+  pointer-events: auto !important;
+  filter: drop-shadow(0 0 20px rgba(255, 0, 128, 0.5)) 
+          drop-shadow(0 0 40px rgba(0, 255, 255, 0.3));
+  transition: all 0.3s ease;
+}
+
+/* Enhanced Form Styling */
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(71, 85, 105, 0.5);
+  color: #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+#orderForm input:focus,
+#orderForm select:focus,
+#orderForm textarea:focus {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+  transform: translateY(-1px);
+}
+
+#orderForm input::placeholder,
+#orderForm textarea::placeholder {
+  color: #64748b;
+}
+
+#orderForm select option {
+  background: #1e293b;
+  color: #f1f5f9;
+}
+
+/* Order form button animations */
+#orderForm button[type="submit"] {
+  position: relative;
+  overflow: hidden;
+}
+
+#orderForm button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#orderForm button[type="submit"]:hover::before {
+  left: 100%;
+}
+
+/* Auth modal enhancements */
+#auth-modal input {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  color: #111827;
+  transition: all 0.3s ease;
+}
+
+#auth-modal input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+#auth-modal input::placeholder {
+  color: #9ca3af;
+}
+
+/* Particle glow animation */
+@keyframes particleGlow {
+  0%, 100% { 
+    filter: drop-shadow(0 0 5px rgba(255, 0, 128, 0.5)) 
+            drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
+  }
+  50% { 
+    filter: drop-shadow(0 0 15px rgba(255, 0, 128, 0.8)) 
+            drop-shadow(0 0 25px rgba(0, 255, 255, 0.6));
+  }
+}
+
+#particles-js {
+  animation: particleGlow 4s ease-in-out infinite;
+}
+
+/* Enhanced glass card for order form */
+#order .glass-card {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#order .glass-card:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Notification System */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 16px;
+  z-index: 9999;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+.notification:not(.translate-x-full) {
+  transform: translateX(0);
+}
+
+/* Loading animation for submit button */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced particle interactions */
+#particles-js canvas {
+  cursor: pointer;
+}
+
+/* Mobile responsiveness for order form */
+@media (max-width: 768px) {
+  #order .glass-card {
+    margin: 0 16px;
+    padding: 24px;
+  }
+  
+  #orderForm .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .notification {
+    right: 16px;
+    left: 16px;
+    max-width: none;
+  }
+}
+
+/* Enhanced Particle Interactions */
+#particles-js {
+  cursor: crosshair;
+  transition: all 0.3s ease;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1 !important;
+  pointer-events: auto !important;
+  background: transparent !important;
+}
+
+#particles-js canvas {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: auto !important;
+  z-index: 1 !important;
+  cursor: crosshair !important;
+}
+
+/* Ensure other elements don't block particle interactions */
+section, .container, .max-w-7xl {
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhanced particle glow on interaction */
+#particles-js.interacting canvas {
+  filter: drop-shadow(0 0 25px rgba(255, 0, 128, 1)) 
+          drop-shadow(0 0 50px rgba(0, 255, 255, 0.8))
+          brightness(1.5);
+}
+
+/* Smooth particle movement */
+#particles-js * {
+  transition: all 0.2s ease-out;
+}
+
+/* Enhanced repulse effect */
+@keyframes particleRepulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Particle attraction effect */
+@keyframes particleAttract {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* Interactive particle states */
+#particles-js[data-interaction="hover"] canvas {
+  animation: particleRepulse 0.6s ease-in-out;
+}
+
+#particles-js[data-interaction="click"] canvas {
+  animation: particleAttract 0.8s ease-in-out;
+}
+
+/* Particle ripple effects */
+.particle-ripple {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  animation: rippleExpand 0.6s ease-out forwards;
+}
+
+@keyframes rippleExpand {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/* Explosion particles */
+.explosion-particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  animation: explosionMove 1.2s ease-out forwards;
+}
+
+@keyframes explosionMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+      calc(cos(var(--angle)) * var(--distance)),
+      calc(sin(var(--angle)) * var(--distance))
+    ) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Mobile touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  #particles-js {
+    cursor: pointer;
+  }
+  
+  #particles-js:active canvas {
+    transform: scale(0.95);
+  }
+}
+
+/* Enhanced particle visual feedback */
+#particles-js::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+              rgba(0, 255, 255, 0.1) 0%, 
+              transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#particles-js:hover::before {
+  opacity: 1;
+}
+
+/* Interactive cursor states */
+#particles-js[data-interaction="hover"] {
+  cursor: grab;
+}
+
+#particles-js[data-interaction="click"] {
+  cursor: grabbing;
+}
+
+/* Particle movement indicators */
+.particle-trail {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(0, 255, 255, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+/* Enhanced mobile interactions */
+@media (max-width: 768px) {
+  #particles-js {
+    cursor: pointer;
+  }
+  
+  #particles-js:active {
+    transform: scale(0.98);
+  }
+  
+  #particles-js canvas {
+    cursor: pointer !important;
+  }
+}
+
+/* Fade in up animation for section headings */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply to all section headings */
+h1, h2, h3, h4, h5, h6 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+h1.animate, h2.animate, h3.animate, h4.animate, h5.animate, h6.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Thumbnail Gallery Styling */
+.thumbnail-gallery {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+  backdrop-filter: blur(10px);
+}
+
+.thumbnail-gallery img {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.thumbnail-gallery img:hover {
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  z-index: 10;
+}
+
+.project-card:hover .thumbnail-gallery img {
+  border-color: rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive thumbnail grid */
+@media (max-width: 768px) {
+  .thumbnail-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    padding: 2px;
+  }
+  
+  .thumbnail-gallery img {
+    border-width: 1px;
+  }
+}
+
+/* Thumbnail Modal/Lightbox Styling */
+#thumbnailModal {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+#thumbnailModal.flex {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#closeModal {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#closeModal:hover {
+  background: rgba(0, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+#prevThumbnail, #nextThumbnail {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#prevThumbnail:hover, #nextThumbnail:hover {
+  background: rgba(0, 255, 255, 0.3) !important;
+  transform: scale(1.1);
+}
+
+#thumbnailCounter {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.thumbnail-slider img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Gaming Thumbnail Gallery Styling */
+#gamingThumbnailGallery {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+}
+
+#gamingThumbnailGallery.flex {
+  animation: galleryScaleUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes galleryScaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.thumbnail-folder {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-folder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 128, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.thumbnail-folder:hover::before {
+  opacity: 1;
+}
+
+.thumbnail-folder .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.thumbnail-folder:hover .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.thumbnail-folder img {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.thumbnail-folder:hover img {
+  filter: brightness(1.1);
+}
+
+/* Full-Size Modal Styling */
+#fullSizeModal {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+}
+
+#fullSizeModal.flex {
+  animation: modalScaleUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes modalScaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#closeGallery, #closeFullSize {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#closeGallery:hover, #closeFullSize:hover {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #gamingThumbnailGallery .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .thumbnail-folder .glass-card {
+    padding: 1rem;
+    height: 40;
+  }
+  
+  .thumbnail-folder img {
+    height: 24;
+  }
+}
+
+@media (max-width: 480px) {
+  #gamingThumbnailGallery .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Logos Gallery Styling */
+#logosGallery {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+}
+
+#logosGallery.flex {
+  animation: logosGalleryScaleUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes logosGalleryScaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.logo-folder {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-folder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 128, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.logo-folder:hover::before {
+  opacity: 1;
+}
+
+.logo-folder .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo-folder:hover .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.logo-folder img {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.logo-folder:hover img {
+  filter: brightness(1.1);
+}
+
+/* Full-Size Logo Modal Styling */
+#fullSizeLogoModal {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+}
+
+#fullSizeLogoModal.flex {
+  animation: logoModalScaleUp 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes logoModalScaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#closeLogosGallery, #closeFullSizeLogo {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#closeLogosGallery:hover, #closeFullSizeLogo:hover {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive adjustments for logos */
+@media (max-width: 768px) {
+  #logosGallery .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .logo-folder .glass-card {
+    padding: 1rem;
+    height: 40;
+  }
+  
+  .logo-folder img {
+    height: 24;
+  }
+}
+
+@media (max-width: 480px) {
+  #logosGallery .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Thumbnail Preview Styling in Gaming Thumbnail Series Card */
+.thumbnail-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-preview::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 128, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.thumbnail-preview:hover::before {
+  opacity: 1;
+}
+
+.thumbnail-preview .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.thumbnail-preview:hover .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.thumbnail-preview img {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.thumbnail-preview:hover img {
+  filter: brightness(1.1);
+}
+
+.thumbnail-preview span {
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.thumbnail-preview:hover span {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Logo Preview Styling in Logo Collection Card */
+.logo-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-preview::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 128, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.logo-preview:hover::before {
+  opacity: 1;
+}
+
+.logo-preview .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo-preview:hover .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.logo-preview img {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.logo-preview:hover img {
+  filter: brightness(1.1);
+}
+
+.logo-preview span {
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-preview:hover span {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Responsive adjustments for previews */
+@media (max-width: 768px) {
+  .thumbnail-preview .glass-card,
+  .logo-preview .glass-card {
+    padding: 0.75rem;
+    height: 20;
+  }
+  
+  .thumbnail-preview img,
+  .logo-preview img {
+    height: 12;
+  }
+  
+  .thumbnail-preview span,
+  .logo-preview span {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail-preview .glass-card,
+  .logo-preview .glass-card {
+    height: 18;
+  }
+  
+  .thumbnail-preview img,
+  .logo-preview img {
+    height: 10;
+  }
+}

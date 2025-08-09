@@ -27,11 +27,12 @@
 <a class="nav-link text-sm font-medium" href="#experience">Experience</a>
 <a class="nav-link text-sm font-medium" href="#education">Education</a>
 <a class="nav-link text-sm font-medium" href="#skills">Skills</a>
+<a class="nav-link text-sm font-medium" href="#order">Order</a>
 <a class="nav-link text-sm font-medium" href="#clients">Clients</a>
 <a class="nav-link text-sm font-medium" href="#blogs">Blogs</a>
 <a class="nav-link text-sm font-medium" href="#contact">Contact</a>
 </div>
-<button id="open-auth-modal" class="bg-gradient-to-r from-primary to-secondary px-6 py-2 !rounded-button text-sm font-medium whitespace-nowrap glow-effect">
+<button id="open-auth-modal" class="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity text-sm">
 Get Started
 </button>
 </div>
@@ -101,7 +102,7 @@ Hire Me
 <div class="grid lg:grid-cols-2 gap-16 items-center">
 <div class="relative">
 <div class="floating">
-<img alt="About Me" class="w-full rounded-2xl object-cover object-top" src="https://static.readdy.ai/image/bec3ee383c137dd1adf7e1b2eac90359/12e11f0584f7ae43badf3e9df6ba0e1c.jfif"/>
+<img alt="About Me" class="w-full rounded-2xl object-cover object-top" src="image2.png"/>
 <div class="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent rounded-2xl"></div>
 </div>
 </div>
@@ -232,30 +233,56 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 </div>
 </div>
 <div class="grid md:grid-cols-2 gap-8" id="portfolio-grid">
-<div class="project-card glass-card rounded-xl overflow-hidden relative group transition duration-300 hover:scale-105 hover:shadow-2xl" data-category="design">
-<img alt="YouTube Thumbnail Project" class="w-full h-64 object-cover object-top" src="https://readdy.ai/api/search-image?query=Modern%20YouTube%20thumbnail%20design%20with%20vibrant%20colors%2C%20bold%20typography%2C%20gaming%20theme%20with%20neon%20effects%2C%20professional%20layout%20with%20call-to-action%20elements%2C%20high%20contrast%20design%2C%20trending%20style%20for%20gaming%20content%20creators&amp;width=600&amp;height=400&amp;seq=project-1&amp;orientation=landscape"/>
-<div class="project-overlay absolute inset-0 flex items-center justify-center">
-<div class="text-center">
-<h3 class="text-xl font-bold text-white mb-2">Gaming Thumbnail Series</h3>
-<p class="text-white/80 text-sm">YouTube Thumbnails</p>
-</div>
-</div>
+<div class="project-card glass-card rounded-xl overflow-hidden relative group transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer" data-category="design" id="gamingThumbnailCard">
 <div class="p-6">
-<h3 class="text-lg font-semibold text-white mb-2">Gaming Thumbnail Series</h3>
-<p class="text-gray-400 text-sm">Created engaging thumbnails for gaming YouTube channel with 50K+ views</p>
+<h3 class="text-lg font-semibold text-white mb-4 text-center">Gaming Thumbnail Series</h3>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div class="thumbnail-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="thumbnail1.jpg" alt="Thumbnail 1" class="w-full h-16 object-cover rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Thumbnail 1</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="thumbnail-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="thumbnail2.jpg" alt="Thumbnail 2" class="w-full h-16 object-cover rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Thumbnail 2</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="thumbnail-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="thumbnail3.jpg" alt="Thumbnail 3" class="w-full h-16 object-cover rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Thumbnail 3</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="thumbnail-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="thumbnail4.jpg" alt="Thumbnail 4" class="w-full h-16 object-cover rounded-md mb-2 group-hover:scale-110 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Thumbnail 4</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<p class="text-gray-400 text-sm mb-2">Custom gaming thumbnails with vibrant colors, bold typography, and eye-catching designs</p>
+<p class="text-gray-500 text-xs">Click to view full gallery • 10 thumbnails available</p>
+</div>
 </div>
 </div>
 <div class="project-card glass-card rounded-xl overflow-hidden relative group" data-category="branding">
-<img alt="Logo Design Project" class="w-full h-64 object-cover object-top" src="https://readdy.ai/api/search-image?query=Professional%20brand%20logo%20design%20showcase%2C%20modern%20minimalist%20logo%20collection%2C%20corporate%20identity%20design%2C%20clean%20background%20with%20multiple%20logo%20variations%2C%20premium%20branding%20presentation%2C%20sleek%20and%20professional%20aesthetic&amp;width=600&amp;height=400&amp;seq=project-2&amp;orientation=landscape"/>
+<img alt="Website Development Project" class="w-full h-64 object-cover object-top" src="https://readdy.ai/api/search-image?query=Modern%20website%20development%20showcase%2C%20responsive%20web%20design%2C%20portfolio%20website%20interface%2C%20clean%20web%20layout%2C%20professional%20web%20development%20project%2C%20modern%20UI%20design%20with%20gradient%20backgrounds&amp;width=600&amp;height=400&amp;seq=project-2&amp;orientation=landscape"/>
 <div class="project-overlay absolute inset-0 flex items-center justify-center">
 <div class="text-center">
-<h3 class="text-xl font-bold text-white mb-2">Brand Identity Design</h3>
-<p class="text-white/80 text-sm">Logo Design</p>
+<h3 class="text-xl font-bold text-white mb-2">Website Development</h3>
+<p class="text-white/80 text-sm">Portfolio Website</p>
 </div>
 </div>
 <div class="p-6">
-<h3 class="text-lg font-semibold text-white mb-2">Brand Identity Design</h3>
-<p class="text-gray-400 text-sm">Complete brand identity package for tech startup including logo variations</p>
+<h3 class="text-lg font-semibold text-white mb-2">Website Development</h3>
+<p class="text-gray-400 text-sm">Custom portfolio website with modern design and interactive elements</p>
 </div>
 </div>
 <div class="project-card glass-card rounded-xl overflow-hidden relative group" data-category="video">
@@ -271,17 +298,43 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 <p class="text-gray-400 text-sm">Promotional video with motion graphics and professional color grading</p>
 </div>
 </div>
-<div class="project-card glass-card rounded-xl overflow-hidden relative group" data-category="design">
-<img alt="Banner Design Project" class="w-full h-64 object-cover object-top" src="https://readdy.ai/api/search-image?query=Social%20media%20banner%20design%20collection%2C%20Instagram%20post%20templates%2C%20Facebook%20cover%20designs%2C%20promotional%20banners%20with%20modern%20typography%2C%20vibrant%20gradient%20backgrounds%2C%20social%20media%20marketing%20materials&amp;width=600&amp;height=400&amp;seq=project-4&amp;orientation=landscape"/>
-<div class="project-overlay absolute inset-0 flex items-center justify-center">
-<div class="text-center">
-<h3 class="text-xl font-bold text-white mb-2">Social Media Campaign</h3>
-<p class="text-white/80 text-sm">Banner Design</p>
-</div>
-</div>
+<div class="project-card glass-card rounded-xl overflow-hidden relative group cursor-pointer" data-category="design" id="logosCard">
 <div class="p-6">
-<h3 class="text-lg font-semibold text-white mb-2">Social Media Campaign</h3>
-<p class="text-gray-400 text-sm">Complete social media banner set for digital marketing campaign</p>
+<h3 class="text-lg font-semibold text-white mb-4 text-center">Logo Collection</h3>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div class="logo-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="logo1.jpg" alt="Logo 1" class="w-full h-16 object-contain rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Logo 1</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="logo-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="logo2.jpg" alt="Logo 2" class="w-full h-16 object-contain rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Logo 2</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="logo-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="logo3.jpg" alt="Logo 3" class="w-full h-16 object-contain rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Logo 3</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+<div class="logo-preview group cursor-pointer transform transition-all duration-300 hover:scale-110">
+<div class="relative overflow-hidden rounded-lg glass-card p-3 h-24 flex flex-col items-center justify-center">
+<img src="logo4.jpg" alt="Logo 4" class="w-full h-16 object-contain rounded-md mb-2 group-hover:scale-105 transition-transform duration-300"/>
+<span class="text-white font-semibold text-center text-sm">Logo 4</span>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<p class="text-gray-400 text-sm mb-2">Collection of custom logo designs for various brands and businesses</p>
+<p class="text-gray-500 text-xs">Click to view full collection • 10 logos available</p>
+</div>
 </div>
 </div>
 </div>
@@ -303,7 +356,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 <h3 class="text-lg font-semibold text-white">Freelance Designer</h3>
 <span class="text-sm text-primary">2025 - Present</span>
 </div>
-<p class="text-gray-400 text-sm">Starting my journey as a freelance GFX designer and video editor, focusing on YouTube content creation and brand identity design.</p>
+<p class="text-gray-400 text-sm">Starting my journey as a freelance GFX designer and video editor, focusing on YouTube content creation, website development, and logo design.</p>
 </div>
 </div>
 <div class="timeline-item">
@@ -365,7 +418,7 @@ We put your ideas and thus your wishes in the form of a unique web project that 
 <h3 class="text-lg font-semibold text-white">Graphic Design Fundamentals</h3>
 <span class="text-sm text-primary">2023 - 2024</span>
 </div>
-<p class="text-gray-400 text-sm">Studied design principles, color theory, typography, and brand identity through online platforms and tutorials.</p>
+<p class="text-gray-400 text-sm">Studied design principles, color theory, typography, and logo design through online platforms and tutorials.</p>
 </div>
 </div>
 </div>
@@ -536,6 +589,92 @@ Proficient in industry-standard tools and always learning new technologies to de
 </div>
 </section>
 
+<!-- Order Form Section -->
+<section class="py-20" id="order">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">
+<span class="gradient-text">Place Your Order</span>
+</h2>
+<p class="text-gray-400 max-w-2xl mx-auto">
+Ready to bring your creative vision to life? Fill out the form below and let's start working on your project!
+</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="glass-card p-8 rounded-xl">
+<form id="orderForm" class="space-y-6" action="https://formspree.io/f/mkgzknjb" method="POST">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-white text-sm font-medium mb-2">Your Name *</label>
+<input name="name" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" type="text" placeholder="Enter your full name" required/>
+</div>
+<div>
+<label class="block text-white text-sm font-medium mb-2">Your Email *</label>
+<input name="email" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" type="email" placeholder="Enter your email address" required/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-white text-sm font-medium mb-2">Service Type *</label>
+<select name="service" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" required>
+<option value="">Select a service</option>
+<option value="youtube-thumbnails">YouTube Thumbnails</option>
+<option value="logo-design">Logo Design</option>
+<option value="video-editing">Video Editing</option>
+<option value="social-media-graphics">Social Media Graphics</option>
+<option value="web-banners">Web Banners</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label class="block text-white text-sm font-medium mb-2">Budget Range *</label>
+<select name="budget" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" required>
+<option value="">Select budget range</option>
+<option value="under-1000">Under ₹1,000</option>
+<option value="1000-2500">₹1,000 - ₹2,500</option>
+<option value="2500-5000">₹2,500 - ₹5,000</option>
+<option value="5000-10000">₹5,000 - ₹10,000</option>
+<option value="over-10000">Over ₹10,000</option>
+</select>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-white text-sm font-medium mb-2">Timeline *</label>
+<select name="timeline" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" required>
+<option value="">Select timeline</option>
+<option value="asap">ASAP (1-2 days)</option>
+<option value="1-week">1 week</option>
+<option value="2-weeks">2 weeks</option>
+<option value="1-month">1 month</option>
+<option value="flexible">Flexible</option>
+</select>
+</div>
+<div>
+<label class="block text-white text-sm font-medium mb-2">Project Description *</label>
+<textarea name="description" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none" placeholder="Describe your project requirements in detail" rows="4" required></textarea>
+</div>
+</div>
+<div>
+<label class="block text-white text-sm font-medium mb-2">Additional References/Requirements</label>
+<textarea name="references" class="w-full px-4 py-3 rounded-lg text-sm bg-slate-800/50 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none" placeholder="Any specific references, examples, or additional requirements" rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button type="submit" class="flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-slate-900">
+<i class="ri-send-plane-line mr-2"></i>
+Submit Order
+</button>
+<button type="button" id="resetForm" class="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-900">
+<i class="ri-refresh-line mr-2"></i>
+Reset Form
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
 <section class="py-20" id="contact">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16">
@@ -631,9 +770,10 @@ Send Message
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#experience">Experience</a>
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#education">Education</a>
         <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#skills">Skills</a>
-        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#clients">Clients</a>
-        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#blogs">Blogs</a>
-        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#contact">Contact</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#order">Order</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#clients">Clients</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#blogs">Blogs</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#contact">Contact</a>
       </div>
       <p class="text-gray-400 text-sm">© 2025 Shivam Anand. All rights reserved.</p>
     </div>
@@ -646,9 +786,9 @@ Send Message
     <button id="close-auth-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-900 text-xl">&times;</button>
     <h2 class="text-2xl font-bold mb-4 text-center text-gray-900">Login / Signup</h2>
     <form>
-      <input class="w-full px-4 py-2 mb-4 border rounded" type="email" placeholder="Email" required>
-      <input class="w-full px-4 py-2 mb-4 border rounded" type="password" placeholder="Password" required>
-      <button class="w-full bg-gradient-to-r from-primary to-secondary text-white py-2 rounded font-semibold" type="submit">Login / Signup</button>
+      <input class="w-full px-4 py-2 mb-4 border border-gray-300 rounded text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" type="email" placeholder="Email" required>
+      <input class="w-full px-4 py-2 mb-4 border border-gray-300 rounded text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" type="password" placeholder="Password" required>
+      <button class="w-full bg-gradient-to-r from-primary to-secondary text-white py-2 rounded font-semibold hover:opacity-90 transition-opacity" type="submit">Login / Signup</button>
     </form>
   </div>
 </div>
@@ -659,6 +799,181 @@ document.getElementById('open-auth-modal').onclick = function() {
 document.getElementById('close-auth-modal').onclick = function() {
   document.getElementById('auth-modal').classList.add('hidden');
 };
+
+// Enhanced Particle Interactions
+document.addEventListener('DOMContentLoaded', function() {
+  const particlesContainer = document.getElementById('particles-js');
+  
+  if (particlesContainer) {
+    // Add interaction states
+    let isInteracting = false;
+    let interactionTimeout;
+    
+    // Mouse enter - enhance particle effects
+    particlesContainer.addEventListener('mouseenter', function() {
+      this.classList.add('interacting');
+      this.setAttribute('data-interaction', 'hover');
+      isInteracting = true;
+      
+      // Clear any existing timeout
+      if (interactionTimeout) {
+        clearTimeout(interactionTimeout);
+      }
+      
+      // Enhance particle movement on hover
+      if (window.pJSDom && window.pJSDom.length > 0) {
+        const pJS = window.pJSDom[0];
+        if (pJS.pJS && pJS.pJS.particles) {
+          // Increase particle speed on hover
+          pJS.pJS.particles.array.forEach(particle => {
+            if (particle.velocity) {
+              particle.velocity.x *= 1.5;
+              particle.velocity.y *= 1.5;
+            }
+          });
+        }
+      }
+    });
+    
+    // Mouse leave - restore normal state
+    particlesContainer.addEventListener('mouseleave', function() {
+      this.classList.remove('interacting');
+      this.removeAttribute('data-interaction');
+      isInteracting = false;
+      
+      // Restore normal particle speed
+      if (window.pJSDom && window.pJSDom.length > 0) {
+        const pJS = window.pJSDom[0];
+        if (pJS.pJS && pJS.pJS.particles) {
+          pJS.pJS.particles.array.forEach(particle => {
+            if (particle.velocity) {
+              particle.velocity.x /= 1.5;
+              particle.velocity.y /= 1.5;
+            }
+          });
+        }
+      }
+      
+      // Delay removal to allow for smooth transitions
+      interactionTimeout = setTimeout(() => {
+        this.classList.remove('interacting');
+      }, 300);
+    });
+    
+    // Mouse move - dynamic particle response and position tracking
+    particlesContainer.addEventListener('mousemove', function(e) {
+      if (isInteracting) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // Update CSS custom properties for mouse position
+        this.style.setProperty('--mouse-x', x + 'px');
+        this.style.setProperty('--mouse-y', y + 'px');
+        
+        // Create ripple effect
+        createParticleRipple(x, y);
+        
+        // Attract particles to mouse position
+        if (window.pJSDom && window.pJSDom.length > 0) {
+          const pJS = window.pJSDom[0];
+          if (pJS.pJS && pJS.pJS.particles) {
+            pJS.pJS.particles.array.forEach(particle => {
+              const dx = x - particle.x;
+              const dy = y - particle.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+              
+              if (distance < 100) {
+                const force = (100 - distance) / 100;
+                particle.x += dx * force * 0.01;
+                particle.y += dy * force * 0.01;
+              }
+            });
+          }
+        }
+      }
+    });
+    
+    // Click - particle explosion effect
+    particlesContainer.addEventListener('click', function(e) {
+      this.setAttribute('data-interaction', 'click');
+      
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      // Create click explosion
+      createParticleExplosion(x, y);
+      
+      // Add extra particles on click
+      if (window.pJSDom && window.pJSDom.length > 0) {
+        const pJS = window.pJSDom[0];
+        if (pJS.pJS && pJS.pJS.particles) {
+          // Create temporary particles for explosion effect
+          for (let i = 0; i < 5; i++) {
+            const tempParticle = {
+              x: x + (Math.random() - 0.5) * 20,
+              y: y + (Math.random() - 0.5) * 20,
+              velocity: {
+                x: (Math.random() - 0.5) * 4,
+                y: (Math.random() - 0.5) * 4
+              },
+              life: 60
+            };
+            
+            // Add to particles array temporarily
+            pJS.pJS.particles.array.push(tempParticle);
+          }
+        }
+      }
+      
+      // Remove click state after animation
+      setTimeout(() => {
+        this.removeAttribute('data-interaction');
+      }, 1200);
+    });
+    
+    // Touch events for mobile devices
+    particlesContainer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      this.setAttribute('data-interaction', 'touch');
+      
+      const touch = e.touches[0];
+      const rect = this.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      
+      // Update CSS custom properties
+      this.style.setProperty('--mouse-x', x + 'px');
+      this.style.setProperty('--mouse-y', y + 'px');
+      
+      // Create touch effect
+      createParticleRipple(x, y);
+    });
+    
+    particlesContainer.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (this.getAttribute('data-interaction') === 'touch') {
+        const touch = e.touches[0];
+        const rect = this.getBoundingClientRect();
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+        
+        // Update CSS custom properties
+        this.style.setProperty('--mouse-x', x + 'px');
+        this.style.setProperty('--mouse-y', y + 'px');
+        
+        // Create trail effect
+        createParticleTrail(x, y);
+      }
+    });
+    
+    particlesContainer.addEventListener('touchend', function(e) {
+      e.preventDefault();
+      this.removeAttribute('data-interaction');
+    });
+  }
+});
 </script>
 
 <!-- Your other scripts -->
@@ -668,12 +983,121 @@ document.getElementById('close-auth-modal').onclick = function() {
 <script src="script6.js"></script>
 <script src="script7.js"></script>
 
-<!-- Particles.js script (make sure this file exists in your project root) -->
+<!-- Particles.js script -->
 <script src="particles.min.js"></script>
 <script>
-  // Initialize particles.js
-  particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('particles.js loaded - callback');
+  // Initialize particles.js with proper configuration
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if particles.js is loaded
+    if (typeof particlesJS !== 'undefined') {
+      console.log('Particles.js library loaded successfully');
+      
+      // Initialize particles with correct v2.0.0 syntax
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('Particles loaded successfully from JSON file');
+      });
+      
+      // Add error handling for particles loading
+      setTimeout(function() {
+        const canvas = document.querySelector('#particles-js canvas');
+        if (!canvas) {
+          console.error('Particles canvas not found - trying alternative initialization');
+          // Try direct initialization as fallback
+          try {
+            particlesJS('particles-js', {
+              "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": ["#ff0080", "#00ffff", "#ffff00", "#ff8000", "#8000ff", "#00ff80"] },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.8, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false } },
+                "size": { "value": 4, "random": true, "anim": { "enable": true, "speed": 2, "size_min": 0.1, "sync": false } },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.6, "width": 2 },
+                "move": { "enable": true, "speed": 3, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": true, "rotateX": 600, "rotateY": 1200 } }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": { "enable": true, "mode": "repulse" },
+                  "onclick": { "enable": true, "mode": "push" },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                  "bubble": { "distance": 200, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+                  "repulse": { "distance": 200, "duration": 0.4 },
+                  "push": { "particles_nb": 4 },
+                  "remove": { "particles_nb": 2 }
+                }
+              },
+              "retina_detect": true
+            });
+            console.log('Particles initialized with fallback method');
+          } catch (error) {
+            console.error('Failed to initialize particles:', error);
+          }
+        } else {
+          console.log('Particles canvas found and working');
+          // Test particle interactions
+          console.log('Testing particle interactions...');
+          canvas.style.cursor = 'crosshair';
+          
+          // Force canvas to be interactive
+          canvas.style.pointerEvents = 'auto';
+          canvas.setAttribute('tabindex', '0');
+          
+          // Add test event listeners
+          canvas.addEventListener('mousemove', function(e) {
+            console.log('Mouse move detected on particles canvas at:', e.offsetX, e.offsetY);
+            // Force repaint
+            this.style.transform = 'translateZ(0)';
+          });
+          
+          canvas.addEventListener('click', function(e) {
+            console.log('Click detected on particles canvas at:', e.offsetX, e.offsetY);
+          });
+          
+          // Test if particles are actually moving
+          setTimeout(() => {
+            const particles = document.querySelectorAll('#particles-js canvas');
+            console.log('Found canvas elements:', particles.length);
+            
+            // Force particles to be interactive
+            particles.forEach(canvas => {
+              canvas.style.pointerEvents = 'auto';
+              canvas.style.cursor = 'crosshair';
+            });
+            
+            // Test manual particle movement
+            console.log('Testing manual particle interaction...');
+            if (window.pJSDom && window.pJSDom.length > 0) {
+              const pJS = window.pJSDom[0];
+              console.log('Particles.js instance found:', pJS);
+              
+              // Test repulse effect manually
+              if (pJS.pJS && pJS.pJS.interactivity && pJS.pJS.interactivity.mouse) {
+                pJS.pJS.interactivity.mouse.pos_x = 400;
+                pJS.pJS.interactivity.mouse.pos_y = 300;
+                pJS.pJS.interactivity.status = 'mousemove';
+                console.log('Manual mouse position set for testing');
+              }
+            }
+          }, 1000);
+        }
+      }, 2000);
+      
+      console.log('Particles initialized successfully');
+    } else {
+      console.error('Particles.js library not found');
+      // Fallback: try to load from CDN
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+      script.onload = function() {
+        console.log('Particles.js loaded from CDN');
+        // Reinitialize after loading
+        location.reload();
+      };
+      document.head.appendChild(script);
+    }
   });
 </script>
 <script>
@@ -702,5 +1126,706 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-</body>
+
+<script>
+// Order form functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const orderForm = document.getElementById('orderForm');
+  const resetForm = document.getElementById('resetForm');
+  
+  if (orderForm) {
+    orderForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(orderForm);
+      const orderData = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        service: formData.get('service'),
+        budget: formData.get('budget'),
+        timeline: formData.get('timeline'),
+        description: formData.get('description'),
+        references: formData.get('references')
+      };
+      
+      // Show loading state
+      const submitBtn = orderForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="ri-loader-4-line mr-2 animate-spin"></i>Submitting...';
+      submitBtn.disabled = true;
+      
+      // Submit form using Formspree
+      fetch('https://formspree.io/f/mkgzknjb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderData)
+      })
+      .then(response => {
+        if (response.ok) {
+          // Success
+          showNotification('Order submitted successfully! I will get back to you soon.', 'success');
+          orderForm.reset();
+        } else {
+          // Error
+          showNotification('There was an error submitting your order. Please try again.', 'error');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        showNotification('Network error. Please check your connection and try again.', 'error');
+      })
+      .finally(() => {
+        // Reset button state
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      });
+    });
+  }
+  
+  if (resetForm) {
+    resetForm.addEventListener('click', function() {
+      if (orderForm) {
+        orderForm.reset();
+        showNotification('Form reset successfully!', 'info');
+      }
+    });
+  }
+});
+
+// Notification system
+function showNotification(message, type = 'info') {
+  // Remove existing notifications
+  const existingNotifications = document.querySelectorAll('.notification');
+  existingNotifications.forEach(notification => notification.remove());
+  
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.className = `notification fixed top-20 right-4 z-50 p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 ${getNotificationClasses(type)}`;
+  notification.innerHTML = `
+    <div class="flex items-center space-x-3">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        ${getNotificationIcon(type)}
+      </svg>
+      <span class="font-medium">${message}</span>
+    </div>
+  `;
+  
+  // Add to page
+  document.body.appendChild(notification);
+  
+  // Animate in
+  setTimeout(() => {
+    notification.classList.remove('translate-x-full');
+  }, 100);
+  
+  // Remove after 5 seconds
+  setTimeout(() => {
+    notification.classList.add('translate-x-full');
+    setTimeout(() => {
+      notification.remove();
+    }, 300);
+  }, 5000);
+}
+
+function getNotificationClasses(type) {
+  switch (type) {
+    case 'success':
+      return 'bg-green-500 text-white';
+    case 'error':
+      return 'bg-red-500 text-white';
+    case 'warning':
+      return 'bg-yellow-500 text-white';
+    default:
+      return 'bg-blue-500 text-white';
+  }
+}
+
+function getNotificationIcon(type) {
+  switch (type) {
+    case 'success':
+      return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>';
+    case 'error':
+      return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+    case 'warning':
+      return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>';
+    default:
+      return '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>';
+  }
+}
+</script>
+
+
+
+<script>
+// Scroll-triggered fade-in-up animations for section headings
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all headings
+  const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  headings.forEach(heading => {
+    observer.observe(heading);
+  });
+});
+</script>
+
+<script>
+// Global click particle effects anywhere on the webpage
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click event listener to the entire document
+  document.addEventListener('click', function(e) {
+    // Don't create particles if clicking on particles container (to avoid double effects)
+    if (e.target.closest('#particles-js')) {
+      return;
+    }
+    
+    // Create particle effect at click position
+    createGlobalClickEffect(e.clientX, e.clientY);
+  });
+});
+
+// Create global click particle effect
+function createGlobalClickEffect(x, y) {
+  // Create multiple particles in a circular pattern
+  for (let i = 0; i < 12; i++) {
+    const particle = document.createElement('div');
+    const angle = (i / 12) * Math.PI * 2;
+    const distance = 40 + Math.random() * 30;
+    const size = 3 + Math.random() * 4;
+    
+    particle.className = 'global-click-particle';
+    particle.style.cssText = `
+      position: fixed;
+      left: ${x}px;
+      top: ${y}px;
+      width: ${size}px;
+      height: ${size}px;
+      background: ${['#ff0080', '#00ffff', '#ffff00', '#ff8000', '#8000ff', '#00ff80'][i % 6]};
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      animation: globalClickMove 1.5s ease-out forwards;
+    `;
+    
+    // Set animation properties
+    particle.style.setProperty('--angle', angle + 'rad');
+    particle.style.setProperty('--distance', distance + 'px');
+    
+    document.body.appendChild(particle);
+    
+    // Remove particle after animation
+    setTimeout(() => {
+      particle.remove();
+    }, 1500);
+  }
+  
+  // Create a ripple effect
+  const ripple = document.createElement('div');
+  ripple.className = 'global-click-ripple';
+  ripple.style.cssText = `
+    position: fixed;
+    left: ${x - 25}px;
+    top: ${y - 25}px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    animation: globalRippleExpand 1s ease-out forwards;
+  `;
+  
+  document.body.appendChild(ripple);
+  
+  // Remove ripple after animation
+  setTimeout(() => {
+    ripple.remove();
+  }, 1000);
+}
+
+// Add CSS animations for global click effects
+const globalClickStyles = document.createElement('style');
+globalClickStyles.textContent = `
+  @keyframes globalClickMove {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(
+        calc(cos(var(--angle)) * var(--distance)),
+        calc(sin(var(--angle)) * var(--distance))
+      ) scale(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes globalRippleExpand {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .global-click-particle {
+    transform-origin: center;
+  }
+  
+  .global-click-ripple {
+    transform-origin: center;
+  }
+`;
+document.head.appendChild(globalClickStyles);
+</script>
+
+    <!-- Gaming Thumbnail Full-Screen Gallery -->
+    <div id="gamingThumbnailGallery" class="fixed inset-0 bg-gradient-to-br from-black via-gray-900 to-black z-50 hidden items-center justify-center overflow-y-auto">
+      <div class="w-full max-w-7xl mx-auto px-6 py-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-4xl font-bold text-white">
+            <span class="gradient-text">Gaming Thumbnail Series</span>
+          </h2>
+          <button id="closeGallery" class="text-white text-4xl hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+            &times;
+          </button>
+        </div>
+        
+        <!-- Thumbnail Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail1.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail1.jpg" alt="Gaming Thumbnail 1" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 1</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail2.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail2.jpg" alt="Gaming Thumbnail 2" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 2</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail3.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail3.jpg" alt="Gaming Thumbnail 3" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 3</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail4.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail4.jpg" alt="Gaming Thumbnail 4" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-110 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 4</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail5.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail5.jpg" alt="Gaming Thumbnail 5" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 5</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail6.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail6.jpg" alt="Gaming Thumbnail 6" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 6</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail7.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail7.jpg" alt="Gaming Thumbnail 7" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 7</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail8.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail8.jpg" alt="Gaming Thumbnail 8" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 8</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail9.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail9.jpg" alt="Gaming Thumbnail 9" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-110 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 9</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="thumbnail-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-thumbnail="thumbnail10.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="thumbnail10.jpg" alt="Gaming Thumbnail 10" class="w-full h-32 object-cover rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Thumbnail 10</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Full-Size Image Modal -->
+        <div id="fullSizeModal" class="fixed inset-0 bg-black bg-opacity-95 z-60 hidden items-center justify-center">
+          <div class="relative max-w-6xl max-h-full mx-4">
+            <button id="closeFullSize" class="absolute top-4 right-4 text-white text-4xl hover:text-cyan-400 transition-colors z-10">
+              &times;
+            </button>
+            <div id="fullSizeImage" class="w-full h-auto max-h-[90vh] object-contain"></div>
+            <div class="text-center mt-4">
+              <p id="imageTitle" class="text-white text-lg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Logos Full-Screen Gallery -->
+    <div id="logosGallery" class="fixed inset-0 bg-gradient-to-br from-black via-gray-900 to-black z-50 hidden items-center justify-center overflow-y-auto">
+      <div class="w-full max-w-7xl mx-auto px-6 py-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-4xl font-bold text-white">
+            <span class="gradient-text">Logo Design Collection</span>
+          </h2>
+          <button id="closeLogosGallery" class="text-white text-4xl hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+            &times;
+          </button>
+        </div>
+        
+        <!-- Logos Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo1.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo1.jpg" alt="Logo Design 1" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 1</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo2.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo2.jpg" alt="Logo Design 2" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 2</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo3.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo3.jpg" alt="Logo Design 3" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 3</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo4.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo4.jpg" alt="Logo Design 4" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 4</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo5.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo5.jpg" alt="Logo Design 5" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 5</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo6.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo6.jpg" alt="Logo Design 6" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 6</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo7.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo7.jpg" alt="Logo Design 7" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 7</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo8.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo8.jpg" alt="Logo Design 8" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 8</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo9.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo9.jpg" alt="Logo Design 9" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 9</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <div class="logo-folder group cursor-pointer transform transition-all duration-500 hover:scale-110" data-logo="logo10.jpg">
+            <div class="relative overflow-hidden rounded-xl glass-card p-4 h-48 flex flex-col items-center justify-center">
+              <img src="logo10.jpg" alt="Logo Design 10" class="w-full h-32 object-contain rounded-lg mb-3 group-hover:scale-105 transition-transform duration-300"/>
+              <h3 class="text-white font-semibold text-center text-sm">Logo 10</h3>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Full-Size Logo Modal -->
+        <div id="fullSizeLogoModal" class="fixed inset-0 bg-black bg-opacity-95 z-60 hidden items-center justify-center">
+          <div class="relative max-w-6xl max-h-full mx-4">
+            <button id="closeFullSizeLogo" class="absolute top-4 right-4 text-white text-4xl hover:text-cyan-400 transition-colors z-10">
+              &times;
+            </button>
+            <div id="fullSizeLogoImage" class="w-full h-auto max-h-[90vh] object-contain"></div>
+            <div class="text-center mt-4">
+              <p id="logoTitle" class="text-white text-lg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Gaming Thumbnail Gallery Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const gamingCard = document.getElementById('gamingThumbnailCard');
+        const gallery = document.getElementById('gamingThumbnailGallery');
+        const closeGallery = document.getElementById('closeGallery');
+        const fullSizeModal = document.getElementById('fullSizeModal');
+        const closeFullSize = document.getElementById('closeFullSize');
+        const fullSizeImage = document.getElementById('fullSizeImage');
+        const imageTitle = document.getElementById('imageTitle');
+        const thumbnailFolders = document.querySelectorAll('.thumbnail-folder');
+        
+        // Open gallery with scale-up effect
+        gamingCard.addEventListener('click', function() {
+          gallery.classList.remove('hidden');
+          gallery.classList.add('flex');
+          document.body.style.overflow = 'hidden';
+          
+          // Add scale-up animation
+          gallery.style.transform = 'scale(0.8)';
+          gallery.style.opacity = '0';
+          
+          setTimeout(() => {
+            gallery.style.transform = 'scale(1)';
+            gallery.style.opacity = '1';
+          }, 50);
+        });
+        
+        // Close gallery
+        closeGallery.addEventListener('click', function() {
+          gallery.style.transform = 'scale(0.8)';
+          gallery.style.opacity = '0';
+          
+          setTimeout(() => {
+            gallery.classList.add('hidden');
+            gallery.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+            gallery.style.transform = 'scale(1)';
+            gallery.style.opacity = '1';
+          }, 300);
+        });
+        
+        // Click outside gallery to close
+        gallery.addEventListener('click', function(e) {
+          if (e.target === gallery) {
+            closeGallery.click();
+          }
+        });
+        
+        // Open full-size image when clicking on thumbnail folder
+        thumbnailFolders.forEach(folder => {
+          folder.addEventListener('click', function() {
+            const thumbnailSrc = this.getAttribute('data-thumbnail');
+            const thumbnailAlt = this.querySelector('img').alt;
+            
+            fullSizeImage.innerHTML = `<img src="${thumbnailSrc}" alt="${thumbnailAlt}" class="w-full h-auto max-h-[90vh] object-contain">`;
+            imageTitle.textContent = thumbnailAlt;
+            
+            fullSizeModal.classList.remove('hidden');
+            fullSizeModal.classList.add('flex');
+            
+            // Add scale-up animation for full-size modal
+            fullSizeModal.style.transform = 'scale(0.8)';
+            fullSizeModal.style.opacity = '0';
+            
+            setTimeout(() => {
+              fullSizeModal.style.transform = 'scale(1)';
+              fullSizeModal.style.opacity = '1';
+            }, 50);
+          });
+        });
+        
+        // Close full-size modal
+        closeFullSize.addEventListener('click', function() {
+          fullSizeModal.style.transform = 'scale(0.8)';
+          fullSizeModal.style.opacity = '0';
+          
+          setTimeout(() => {
+            fullSizeModal.classList.add('hidden');
+            fullSizeModal.classList.remove('flex');
+            fullSizeModal.style.transform = 'scale(1)';
+            fullSizeModal.style.opacity = '1';
+          }, 300);
+        });
+        
+        // Click outside full-size modal to close
+        fullSizeModal.addEventListener('click', function(e) {
+          if (e.target === fullSizeModal) {
+            closeFullSize.click();
+          }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            if (!fullSizeModal.classList.contains('hidden')) {
+              closeFullSize.click();
+            } else if (!gallery.classList.contains('hidden')) {
+              closeGallery.click();
+            }
+          }
+        });
+      });
+    </script>
+    
+    <script>
+      // Logos Gallery Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const logosCard = document.getElementById('logosCard');
+        const logosGallery = document.getElementById('logosGallery');
+        const closeLogosGallery = document.getElementById('closeLogosGallery');
+        const fullSizeLogoModal = document.getElementById('fullSizeLogoModal');
+        const closeFullSizeLogo = document.getElementById('closeFullSizeLogo');
+        const fullSizeLogoImage = document.getElementById('fullSizeLogoImage');
+        const logoTitle = document.getElementById('logoTitle');
+        const logoFolders = document.querySelectorAll('.logo-folder');
+        
+        // Open logos gallery with scale-up effect
+        logosCard.addEventListener('click', function() {
+          logosGallery.classList.remove('hidden');
+          logosGallery.classList.add('flex');
+          document.body.style.overflow = 'hidden';
+          
+          // Add scale-up animation
+          logosGallery.style.transform = 'scale(0.8)';
+          logosGallery.style.opacity = '0';
+          
+          setTimeout(() => {
+            logosGallery.style.transform = 'scale(1)';
+            logosGallery.style.opacity = '1';
+          }, 50);
+        });
+        
+        // Close logos gallery
+        closeLogosGallery.addEventListener('click', function() {
+          logosGallery.style.transform = 'scale(0.8)';
+          logosGallery.style.opacity = '0';
+          
+          setTimeout(() => {
+            logosGallery.classList.add('hidden');
+            logosGallery.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+            logosGallery.style.transform = 'scale(1)';
+            logosGallery.style.opacity = '1';
+          }, 300);
+        });
+        
+        // Click outside logos gallery to close
+        logosGallery.addEventListener('click', function(e) {
+          if (e.target === logosGallery) {
+            closeLogosGallery.click();
+          }
+        });
+        
+        // Open full-size logo when clicking on logo folder
+        logoFolders.forEach(folder => {
+          folder.addEventListener('click', function() {
+            const logoSrc = this.getAttribute('data-logo');
+            const logoAlt = this.querySelector('img').alt;
+            
+            fullSizeLogoImage.innerHTML = `<img src="${logoSrc}" alt="${logoAlt}" class="w-full h-auto max-h-[90vh] object-contain">`;
+            logoTitle.textContent = logoAlt;
+            
+            fullSizeLogoModal.classList.remove('hidden');
+            fullSizeLogoModal.classList.add('flex');
+            
+            // Add scale-up animation for full-size modal
+            fullSizeLogoModal.style.transform = 'scale(0.8)';
+            fullSizeLogoModal.style.opacity = '0';
+            
+            setTimeout(() => {
+              fullSizeLogoModal.style.transform = 'scale(1)';
+              fullSizeLogoModal.style.opacity = '1';
+            }, 50);
+          });
+        });
+        
+        // Close full-size logo modal
+        closeFullSizeLogo.addEventListener('click', function() {
+          fullSizeLogoModal.style.transform = 'scale(0.8)';
+          fullSizeLogoModal.style.opacity = '0';
+          
+          setTimeout(() => {
+            fullSizeLogoModal.classList.add('hidden');
+            fullSizeLogoModal.classList.remove('flex');
+            fullSizeLogoModal.style.transform = 'scale(1)';
+            fullSizeLogoModal.style.opacity = '1';
+          }, 300);
+        });
+        
+        // Click outside full-size logo modal to close
+        fullSizeLogoModal.addEventListener('click', function(e) {
+          if (e.target === fullSizeLogoModal) {
+            closeFullSizeLogo.click();
+          }
+        });
+        
+        // Keyboard navigation for logos
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            if (!fullSizeLogoModal.classList.contains('hidden')) {
+              closeFullSizeLogo.click();
+            } else if (!logosGallery.classList.contains('hidden')) {
+              closeLogosGallery.click();
+            }
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
